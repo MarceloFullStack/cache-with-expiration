@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.clearCacheIndexedDB = exports.cacheWithDurationIndexedDB = void 0;
-const cacheWithDurationIndexedDB = async (cacheKey, cacheTime, fn, log = false) => {
+exports.clearCacheIndexedDB = exports.cacheWithDuration = void 0;
+const cacheWithDuration = async (cacheKey, cacheTime, fn, log = false) => {
     console.log('teste');
     const dbName = 'cacheDB';
     const storeName = 'cacheStore';
@@ -49,7 +49,7 @@ const cacheWithDurationIndexedDB = async (cacheKey, cacheTime, fn, log = false) 
     await setData(cacheKey, { value: data, timestamp: now });
     return data;
 };
-exports.cacheWithDurationIndexedDB = cacheWithDurationIndexedDB;
+exports.cacheWithDuration = cacheWithDuration;
 const clearCacheIndexedDB = () => {
     return new Promise((resolve, reject) => {
         const request = window.indexedDB.open('cacheDB', 1);
