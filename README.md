@@ -51,3 +51,4 @@ Documentação
 A biblioteca cache-with-expiration é uma solução simples e eficiente para armazenar o resultado de uma função em cache por um determinado período de tempo, utilizando o IndexedDB. A função `cacheWithDurationIndexedDB` verifica se o resultado da função já está em cache e, se sim, retorna o resultado desse cache. Se o resultado não estiver em cache ou se o tempo de cache expirou, a função `cacheWithDurationIndexedDB` executa a função passada como argumento e armazena o resultado em cache.
 
 Além disso, a biblioteca também oferece a função `clearCacheIndexedDB` para limpar o cache armazenado.
+[continuar documentacao]
