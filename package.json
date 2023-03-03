@@ -1,0 +1,25 @@
+{
+  "name": "cache-with-expiration",
+  "version": "1.0.0",
+  "description": "Uma biblioteca JavaScript para armazenamento em cache com expiração de tempo.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
+    "start:dev": "npx nodemon"
+  },
+  "keywords": ["cache", "expiração", "armazenamento", "indexeddb", "local storage", "memória", "desempenho", "rede", "JavaScript", "TypeScript", "biblioteca", "pacote", "axios"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.5",
+    "nodemon": "^2.0.21",
+    "rimraf": "^4.2.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
