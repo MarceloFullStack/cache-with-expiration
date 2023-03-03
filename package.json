@@ -1,8 +1,12 @@
 {
   "name": "cache-with-expiration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Uma biblioteca JavaScript para armazenamento em cache com expiração de tempo.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
