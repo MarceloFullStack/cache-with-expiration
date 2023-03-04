@@ -5,19 +5,15 @@ on:
       - 'package.json'
 
 jobs:
-  build-and-publish:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Install dependencies and build 🔧
-        run: npm ci && npm run build
-      - name: Publish package on NPM 📦
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+      - run: npm install
+      - run: npm test
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
