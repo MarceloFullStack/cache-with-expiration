@@ -22,6 +22,10 @@ Importe a função `cacheWithDurationIndexedDB` e passe três argumentos para el
 *   `fn`: uma função que representa a ação que você deseja cachear.
 *   `log`: um booleano que controla se as informações de log serão exibidas ou não (opcional, padrão é `false`).
 
+## Demonstração
+
+Acesse a demonstração do projeto no [CodeSandbox](https://codesandbox.io/s/hungry-gates-nebif8).
+
 ```
 import { cacheWithDurationIndexedDB } from 'cache-with-expiration';
 
@@ -52,3 +56,5 @@ A biblioteca cache-with-expiration é uma solução simples e eficiente para arm
 
 Além disso, a biblioteca também oferece a função `clearCacheIndexedDB` para limpar o cache armazenado.
 [continuar documentacao]
+
+
