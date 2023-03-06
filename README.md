@@ -36,6 +36,9 @@ const getData = async () => {
 const result = await cacheWithDurationIndexedDB('myCacheKey', 30 * 1000, getData);
 ```
 
+<img src="https://raw.githubusercontent.com/MarceloFullStack/cache-with-expiration/main/src/images/print_1.png" alt="um exemplo">
+
+
 A função `cacheWithDurationIndexedDB` retorna o resultado da função passada como argumento, seja ele obtido a partir da cache ou da execução da função em si.
 
 Limpeza do cache
