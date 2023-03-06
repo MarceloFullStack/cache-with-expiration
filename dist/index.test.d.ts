@@ -4,4 +4,3 @@ declare const cache: {
         timestamp: number;
     };
 };
-declare function cacheWithDuration(key: string, duration: number, fn: () => Promise<any>): Promise<any>;

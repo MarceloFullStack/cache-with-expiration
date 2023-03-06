@@ -1,6 +1,6 @@
 {
   "name": "cache-with-expiration",
-  "version": "1.0.2",
+  "version": "1.0.3",
   
   "description": "Uma biblioteca JavaScript para armazenamento em cache com expiração de tempo.",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "types": "cache-with-duration-indexed-db.d.ts",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/MarceloFullStack/cache-with-expiration.git"
